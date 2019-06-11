@@ -1,3 +1,5 @@
+
+
 /// Global Variables
 
 // array of the initial default search buttons
@@ -29,3 +31,8 @@ function renderButtons() {
 
 // run the renderButtons function so that the initial default search buttons are added to the page
 renderButtons();
+
+$("button").on("click", function(){
+    console.log($(this).attr("data-name"));
+})
+
