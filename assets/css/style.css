@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
 body {
     background-image: url("../images/stars.png");
     background-position: center;
@@ -9,6 +16,7 @@ body {
 #header {
     background-color: grey;
     padding: 8px 0 0 0;
+    margin: 30px;
 }
 
 #header h1 {
@@ -19,5 +27,16 @@ body {
 
 main {
     padding: 20px 100px;
+}
+
+.button {
+    padding: 5px;
+    margin: 5px;
+}
+
+#button-area, #main-content {
+    background-color: grey;
+    padding: 20px;
+    margin: 20px;
 }
 

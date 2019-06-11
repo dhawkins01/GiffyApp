@@ -12,14 +12,20 @@ function renderButtons() {
     // make a for loop that goes through the buttons array and displays the default search buttons
     for (i = 0; i < buttons.length; i++) {
         var a = $("<button>");
+        // add a class to each button
+        a.addClass("button");
         // add a data attribute with the name of the current movie in the array
         a.attr("data-name", buttons[i]);
         // add a text attribute that will be displayed on the button
         a.text(buttons[i]);
         // add the button to the button sidebar
         $("#button-area").append(a);
+        // $("#button-area").append("<br>");
+        
     }
 }
+
+
 
 // run the renderButtons function so that the initial default search buttons are added to the page
 renderButtons();
