@@ -17,6 +17,7 @@ body {
     background-color: grey;
     padding: 8px 0 0 0;
     margin: 30px;
+    width: 100%;
 }
 
 #header h1 {
@@ -38,5 +39,9 @@ main {
     background-color: grey;
     padding: 20px;
     margin: 20px;
+}
+
+p {
+    color: white;
 }
 
