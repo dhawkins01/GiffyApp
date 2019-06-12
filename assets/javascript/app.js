@@ -29,7 +29,7 @@ $(document).ready(function () {
             for (i = 0; i < response.data.length; i++) {
                 // console.log(response.data[i].rating);
                 // create a div to hold the gif
-                var gifDiv = $("<div class='gif'>");
+                var gifDiv = $("<div>");
                 // store the rating
                 var rating = response.data[i].rating;
                 // console.log(rating);
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 // console.log(imgStill);
                 // console.log(imgAnimated);
                 // create the image tag to hold the image
-                var image = $("<img>").attr("src", imgStill).attr("data-still", imgStill).attr("data-animate", imgAnimated).attr("data-state", "still");
+                var image = $("<img>").attr("src", imgStill).attr("data-still", imgStill).attr("data-animate", imgAnimated).attr("data-state", "still").addClass("gif");
                 console.log(image);
                 gifDiv.append(image);
                 $("#gif-area").append(gifDiv);
