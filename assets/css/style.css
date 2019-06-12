@@ -45,3 +45,7 @@ p {
     color: white;
 }
 
+#gif-area {
+    float: left;
+}
+
