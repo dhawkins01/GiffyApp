@@ -29,7 +29,7 @@ $(document).ready(function () {
             for (i = 0; i < response.data.length; i++) {
                 // console.log(response.data[i].rating);
                 // create a div to hold the gif
-                var gifDiv = $("<div>");
+                var gifDiv = $("<div class='m-2'>");
                 // store the rating
                 var rating = response.data[i].rating;
                 // console.log(rating);
