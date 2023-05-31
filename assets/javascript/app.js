@@ -5,18 +5,18 @@ $(document).ready(function () {
     /// Global Variables
 
     // array of the initial default search buttons
-    var buttons = ["Luke Skywalker", "Obi Wan Kanobi", "Darth Vader", "Death Star", "Han Solo", "Chewbacca", "Jabba the Hutt"];
+    var buttons = ["Luke Skywalker", "Obi Wan Kanobi", "Darth Vader", "Death Star", "Han Solo", "Chewbacca", "Jabba the Hutt", "roblox", "minecraft"];
 
     renderButtons();
 
     function displayGif() {
         $("#gif-area").html("");
         var search = $(this).attr("data-name");
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=Kq3vyYsmkT8yZyWSqjK4ehg2MLJW5eha&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=Kq3vyYsmkT8yZyWSqjK4ehg2MLJW5eha&limit=25";
 
         // ajax call
-        // console.log(search);
-        // console.log(queryURL);
+        console.log(search);
+        console.log(queryURL);
 
         $.ajax({
             url: queryURL,
